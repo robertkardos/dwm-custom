@@ -1,5 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
+//#define ACTUALFULLSCREEN /* Uncomment if the actualfullscreen patch is added */
+//#define AWESOMEBAR /* Uncommnet if the awesomebar patch is used */
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -96,6 +99,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY,                       XK_r,      togglepreviewallwin,  {0} },
 };
 
 /* button definitions */
